@@ -1,0 +1,15 @@
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+$receding: #ccc;
+$primary: #3A064D;
+$secondary: #521A66;
+$contrasting: #7FAC3A; 
+
+@import 'general';
+@import 'nav';
+@import 'gallery';

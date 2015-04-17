@@ -1,0 +1,27 @@
+.navbar-default {
+	border-bottom: 1px solid $secondary;
+	border-bottom: 1px solid #35496C;
+
+	font-family: 'Ubuntu', sans-serif;
+}	
+.navbar-default .navbar-nav>li>a {
+
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color:$contrasting;
+	background:rgba(0,0,0,0.02);
+	
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background:$secondary;
+	background:#5D6082;
+	color:#fff;
+border-bottom:1px solid transparent;
+}
+.navbar-brand {
+	padding-top:0;
+	padding-bottom:0;
+	img {
+		max-width:50px;
+	}
+}
