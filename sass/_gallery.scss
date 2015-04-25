@@ -1,0 +1,38 @@
+
+.blueimp-gallery > .description {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left:-350px;
+	text-align:center;
+	color: #fff;
+	display: none;
+	width:700px;
+}
+.blueimp-gallery > .description {
+	display: block;
+}
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next,
+.blueimp-gallery > .close,
+.blueimp-gallery > .title,
+.blueimp-gallery > .play-pause {
+  display: block;
+  /* Fix z-index issues (controls behind slide element) on Android: */
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+       -o-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.col-md-12 > .Gallery{
+	text-align:center;
+	h3 {
+		text-align:left;
+	}
+	img {
+		margin-left:10px;
+		margin-right:10px;	
+		margin-bottom:10px;
+	}
+}

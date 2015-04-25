@@ -46,4 +46,12 @@ $('.Gallery').click( function (event) {
         links = this.getElementsByTagName('a');
     blueimp.Gallery(links, options);
 });
+$('a.tabTrigger').on('click',  function (){
+	var tabTarget = $(this).attr('data-target');
+	var tabPane = $(tabTarget).attr('href');
+	
+	$('section#work .nav-tabs li,section#work div.tab-pane').removeClass('active');
+	$(tabTarget).parent().addClass('active');
+	$('div'+tabPane).addClass('active');
+});
 
