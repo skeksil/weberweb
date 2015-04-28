@@ -73,7 +73,16 @@ div>.btn-transparent:last-child:hover {
 	height:100px;
 	background:#401754;
 	color:#eee;
+	position:relative;
+	overflow:hidden;
+	img {
+		max-width:100%;
+		position:absolute;
+		left:0;
+		top:0;
+	}
 }
+
 footer {
 	background:#391649;
 	background:#BEA9B7;

@@ -38,9 +38,11 @@ $('.Gallery').click( function (event) {
         options = {index: link, event: event, onslide: function (index, slide) {
             var text = this.list[index].getAttribute('data-description'),
                 node = this.container.find('.description');
-            node.empty();
+				node.empty();
+				$('#blueimp-gallery').removeClass('hasDescription');
             if (text) {
                 node[0].appendChild(document.createTextNode(text));
+				$('#blueimp-gallery').addClass('hasDescription');
             }
         } },
         links = this.getElementsByTagName('a');

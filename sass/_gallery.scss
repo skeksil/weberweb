@@ -2,12 +2,13 @@
 .blueimp-gallery > .description {
 	position: absolute;
 	bottom: 30px;
-	left: 50%;
-	margin-left:-350px;
+	left:50%;
+	margin-lefT:-400px;
+	
 	text-align:center;
 	color: #fff;
 	display: none;
-	width:700px;
+	width:800px;
 }
 .blueimp-gallery > .description {
 	display: block;
@@ -35,4 +36,11 @@
 		margin-right:10px;	
 		margin-bottom:10px;
 	}
+}
+h3.title {
+	background:rgba(0,0,0,0.75);
+	padding:2px 5px;
+}
+.blueimp-gallery.hasDescription>.slides>.slide>.slide-content {
+	padding-bottom:100px;
 }
