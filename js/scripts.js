@@ -17,7 +17,9 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+/*
 blueimp.Gallery(
+	
     document.getElementsByClassName('.Gallery'),
     {
         onslide: function (index, slide) {
@@ -29,7 +31,7 @@ blueimp.Gallery(
             }
         }
     }
-);
+);*/
 
 $('.Gallery').click( function (event) {
    event = event || window.event;

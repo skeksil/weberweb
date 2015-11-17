@@ -17,12 +17,17 @@
 			max-width:170px;
 		}
 	}
-	.rounded  {
+	.brandwrapper {
 		width:350px;
 		height:350px;
+	}
+	.rounded  {
+		
 		padding-top:67px;
 	}
-	
+	.blur {
+		margin-left:-175px;
+	}
 }
 @media (max-width: 992px){
 	.Gallery {
@@ -50,18 +55,18 @@
 		}
 		padding-bottom:50px;
 	}
-	.rounded  {
+	.brandwrapper {
 		width:250px;
 		height:250px;
+	}
+	.rounded  {
+		
 		padding-top:45px;
 	}
-	.IconCircle {
-		max-width:70px;
-		height:70px;
-		font-size:1.8em;
-		line-height:70px;
-	
+	.blur {
+		margin-left:-125px;
 	}	
+	
 	#services {
 	
 		ul {
@@ -99,11 +104,17 @@
 			padding:0 25px;
 		}
 	}
-	.rounded  {
+	.brandwrapper {
 		width:180px;
 		height:180px;
+	}
+	.rounded  {
+		
 		padding-top:20px;
 		
+	}
+	.blur {
+		margin-left:-90px;
 	}
 	header {
 		.btn-lg {
@@ -119,6 +130,10 @@
 	.blueimp-gallery > .description {
 		width:350px;
 		margin-left:-175px;
+	}
+	#about img {
+		max-width:250px;
+		width:auto;
 	}
 }
 @media (max-width: 370px) {
@@ -146,8 +161,18 @@
 	header{
 		background-attachment: scroll;
 	}
+	.blur, div>.btn-transparent:last-child:hover:before, .btn-transparent:hover:before, .btn-transparent:before {
+		display:none;
+	}
+	 .rounded {
+		background:rgba(21,41,57,0.5);
+	
+	}
 	.portrait {
-	float:right;
-	margin-right:15px;
-}
+		float:right;
+		
+	}
+	#about img {
+		max-width:100%;
+	}
 }

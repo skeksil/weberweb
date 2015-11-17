@@ -38,7 +38,42 @@ section:nth-child(even) {
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #DAE0E0;
   padding: 15px 30px;
-  margin: 20px; }
+  margin: 20px;
+  position: Relative;
+  z-index: 1; }
+
+.btn-transparent:before {
+  background: url(../images/photo.jpg);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/photo.jpg);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.4))), url(../images/photo.jpg);
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/photo.jpg);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/photo.jpg);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/photo.jpg);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/photo.jpg);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66000000', endColorstr='#66000000',GradientType=0 );
+  /* IE6-9 */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  content: ' ';
+  z-index: -1; }
 
 .btn-transparent:hover {
   background: #3a537f;
@@ -46,8 +81,50 @@ section:nth-child(even) {
   background: rgba(90, 184, 92, 0.8);
   color: #fff; }
 
+.btn-transparent:hover:before {
+  background: -moz-linear-gradient(top, rgba(90, 184, 92, 0.8) 0%, rgba(90, 184, 92, 0.8) 100%), url(../images/photo.jpg);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(90, 184, 92, 0.8)), color-stop(100%, rgba(90, 184, 92, 0.8))), url(../images/photo.jpg);
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(90, 184, 92, 0.8) 0%, rgba(90, 184, 92, 0.8) 100%), url(../images/photo.jpg);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(90, 184, 92, 0.8) 0%, rgba(90, 184, 92, 0.8) 100%), url(../images/photo.jpg);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(90, 184, 92, 0.8) 0%, rgba(90, 184, 92, 0.8) 100%), url(../images/photo.jpg);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(90, 184, 92, 0.8) 0%, rgba(90, 184, 92, 0.8) 100%), url(../images/photo.jpg);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5ab85c', endColorstr='#cc5ab85c',GradientType=0 );
+  /* IE6-9 */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover; }
+
 .btn-transparent:active, .btn-transparent:visited {
   color: #fff; }
+
+div > .btn-transparent:last-child:hover:before {
+  background: -moz-linear-gradient(top, rgba(74, 33, 94, 0.7) 0%, rgba(74, 33, 94, 0.7) 100%), url(../images/photo.jpg);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(74, 33, 94, 0.7)), color-stop(100%, rgba(74, 33, 94, 0.7))), url(../images/photo.jpg);
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(74, 33, 94, 0.7) 0%, rgba(74, 33, 94, 0.7) 100%), url(../images/photo.jpg);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(74, 33, 94, 0.7) 0%, rgba(74, 33, 94, 0.7) 100%), url(../images/photo.jpg);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(74, 33, 94, 0.7) 0%, rgba(74, 33, 94, 0.7) 100%), url(../images/photo.jpg);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(74, 33, 94, 0.7) 0%, rgba(74, 33, 94, 0.7) 100%), url(../images/photo.jpg);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b34a215e', endColorstr='#b34a215e',GradientType=0 );
+  /* IE6-9 */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover; }
 
 div > .btn-transparent:last-child:hover {
   background: #5cb85c;
@@ -87,8 +164,9 @@ footer {
   float: right; }
 
 #about img {
+  with: 100%;
   max-width: 250px;
-  margin-lefT: auto;
+  margin-left: auto;
   margin-right: auto; }
 
 .help-block {
@@ -148,15 +226,34 @@ header {
     line-height: 1.5;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5); }
 
-.rounded {
-  background: rgba(21, 41, 57, 0.5);
+.brandwrapper {
   border-radius: 1000px;
   height: 500px;
   width: 500px;
+  transition: width 0.2s, height 0.2s; }
+
+.rounded {
+  background: rgba(21, 41, 57, 0.4);
   padding-top: 80px;
   position: relative;
-  margin: 0 auto;
-  transition: width 0.2s, height 0.2s; }
+  z-index: 10;
+  margin: 0 auto; }
+
+.blur {
+  background: url(../images/photo.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-lefT: -250px;
+  z-index: 1; }
 
 .form-control {
   border-radius: 2px;
@@ -240,10 +337,15 @@ h3.title {
     margin-bottom: 5px;
     max-width: 170px; }
 
-  .rounded {
+  .brandwrapper {
     width: 350px;
-    height: 350px;
-    padding-top: 67px; } }
+    height: 350px; }
+
+  .rounded {
+    padding-top: 67px; }
+
+  .blur {
+    margin-left: -175px; } }
 @media (max-width: 992px) {
   .Gallery {
     margin-bottom: 10px;
@@ -263,16 +365,15 @@ h3.title {
     header img {
       padding: 0 40px; }
 
-  .rounded {
+  .brandwrapper {
     width: 250px;
-    height: 250px;
+    height: 250px; }
+
+  .rounded {
     padding-top: 45px; }
 
-  .IconCircle {
-    max-width: 70px;
-    height: 70px;
-    font-size: 1.8em;
-    line-height: 70px; }
+  .blur {
+    margin-left: -125px; }
 
   #services ul {
     padding-left: 30%;
@@ -297,10 +398,15 @@ h3.title {
     header img {
       padding: 0 25px; }
 
-  .rounded {
+  .brandwrapper {
     width: 180px;
-    height: 180px;
+    height: 180px; }
+
+  .rounded {
     padding-top: 20px; }
+
+  .blur {
+    margin-left: -90px; }
 
   header .btn-lg {
     font-size: 17px;
@@ -309,7 +415,11 @@ h3.title {
 
   .blueimp-gallery > .description {
     width: 350px;
-    margin-left: -175px; } }
+    margin-left: -175px; }
+
+  #about img {
+    max-width: 250px;
+    width: auto; } }
 @media (max-width: 370px) {
   .Gallery img {
     max-width: 130px; }
@@ -328,8 +438,16 @@ h3.title {
   header {
     background-attachment: scroll; }
 
+  .blur, div > .btn-transparent:last-child:hover:before, .btn-transparent:hover:before, .btn-transparent:before {
+    display: none; }
+
+  .rounded {
+    background: rgba(21, 41, 57, 0.5); }
+
   .portrait {
-    float: right;
-    margin-right: 15px; } }
+    float: right; }
+
+  #about img {
+    max-width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
